@@ -3,8 +3,17 @@ import { LOGIN_ATTEMPT, LOGIN_SUCCESS } from './login.action'
 
 
 const initLogiingState = {
-    userName: '',
-    pasword: ''
+    loging:{
+            email: '',
+            pasword: '' 
+    },
+    user:{
+        firstName:'',
+        lastName:'',
+        imageUrl:'',
+        email:''
+    }
+
 }
 
 

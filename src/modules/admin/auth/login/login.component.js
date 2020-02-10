@@ -4,12 +4,12 @@ import { connect } from 'react-redux'
 
 const LoginComponent = props => {
 
+    console.log(props)
     const handleLoging = () => {
         props.login_Attempt({name:'rishan'})
     }
     return (
         <div>This is loging componet
-
             <button onClick={handleLoging}>Login</button>
         </div>
     )
@@ -17,7 +17,7 @@ const LoginComponent = props => {
 }
 
 const mapStateToProps = state => {
-    return { ...state }
+    return { loginReducer: state.authReducer.loginReducer }
 }
 
 const mapDispatchToProps = {
