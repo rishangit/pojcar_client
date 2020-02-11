@@ -1,9 +1,9 @@
 
 import {combineReducers} from 'redux';
-import loginReducer from '../modules/admin/login/login.reducer'
+import authReducer from '../modules/admin/auth/auth.reducer'
 
 const rootReducer = combineReducers({
-    loginReducer
+    authReducer
 })
 
 

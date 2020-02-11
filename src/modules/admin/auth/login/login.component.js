@@ -10,7 +10,6 @@ const LoginComponent = props => {
     }
     return (
         <div>This is loging componet
-
             <button onClick={handleLoging}>Login</button>
         </div>
     )
@@ -18,7 +17,7 @@ const LoginComponent = props => {
 }
 
 const mapStateToProps = state => {
-    return { store: state }
+    return { loginReducer: state.authReducer.loginReducer }
 }
 
 const mapDispatchToProps = {
