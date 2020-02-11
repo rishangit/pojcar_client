@@ -12,9 +12,9 @@ const loginAttempEpic = (action$, state$) => {
              delay(1000),
              map(( {payload}) =>  loginSuccess(payload) )
         ))
-
     )
 
 }
+
 const loginEpic = combineEpics(loginAttempEpic)
 export default loginEpic

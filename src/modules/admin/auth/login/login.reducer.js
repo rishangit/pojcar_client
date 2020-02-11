@@ -2,7 +2,7 @@
 import { LOGIN_ATTEMPT, LOGIN_SUCCESS } from './login.action'
 
 
-const initLogiingState = {
+const initLogingState = {
     loging:{
             email: '',
             pasword: '' 
@@ -16,8 +16,7 @@ const initLogiingState = {
 }
 
 
-const loginReducer = (state = initLogiingState, action) => {
-    console.log('action',action)
+const loginReducer = (state = initLogingState, action) => {
     let { type, payload } = action;
 
     switch (type) {
