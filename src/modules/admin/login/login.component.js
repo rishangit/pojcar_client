@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 const LoginComponent = props => {
 
+    console.log(props)
     const handleLoging = () => {
         props.login_Attempt({name:'rishan'})
     }
@@ -17,7 +18,7 @@ const LoginComponent = props => {
 }
 
 const mapStateToProps = state => {
-    return { ...state }
+    return { store: state }
 }
 
 const mapDispatchToProps = {
